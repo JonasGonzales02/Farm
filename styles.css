@@ -82,6 +82,62 @@ table {
     --white:#ffffff;
 }
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+h1, h2, h3{
+    font-family: "Irish Grover";
+}
+h1{
+    font-size: 2.5rem;
+    margin:1rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3 , p{
+    font-size: 1.25rem;
+}
+p{
+    font-family: "habibi";
+}
+header{
+    background-color: #06A816;
+    color: #ffffff;
+    display:grid;
+    padding: 0;
+    text-align: center;
+
+}
+nav{
+    margin: 1rem 1rem 0;
+}
+ul{
+    display:grid;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+a{
+    display: block;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #E75D02;
+    width:250px;
+    color: #ffffff;
+}
+main{
+    margin: 0 1rem, 1rem, 1rem;
+}
+figure{
+    height: 350px;
+}
+figure p{
+    color:#ffffff;
+    width: 130px;
+    display: block;
+}
+
+
+
+
 @media (min-width:428px) {
 #sale-fruit{
     display:grid;
