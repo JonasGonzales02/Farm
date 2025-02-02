@@ -82,7 +82,12 @@ table {
     --white:#ffffff;
 }
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
-@media screen and (min-width:428px){
+@media (min-width:428px) {
+    header{
+        padding: 0;
+        background-color: #06A816;
+
+    }
     h1{
         font-family: "irish grover";
         font-size:2.5rem;
@@ -105,44 +110,8 @@ body {
     min-width: 428px;
     font-family: "habibi";
 }
-@media screen and (min-width:834px){
-    h1{
-        font-family: "irish grover";
-        font-size:2.5rem;
-    }
-    h2{
-        font-family: "Irish grover";
-        font-size:1.75rem;
 
-    }
-    h3{
-        font-family: "Irish grover";
-        font-size: 1.25rem;
-    }
-    h3 + p{
-        font-size:1.25rem;
-    }
 
-}
-@media screen and (min-width: 1280px){
-    h1{
-        font-family: "irish grover";
-        font-size:2.5rem;
-    }
-    h2{
-        font-family: "Irish grover";
-        font-size:1.75rem;
-
-    }
-    h3{
-        font-family: "Irish grover";
-        font-size: 1.25rem;
-    }
-    h3 + p{
-        font-size:1.25rem;
-    }
-
-}
 @media screen and (min-width:1440px){
     h1{
         font-family: "irish grover";
@@ -159,5 +128,3 @@ body {
     }
     h3 + p{
         font-size:1.25rem;
-    }
-}
