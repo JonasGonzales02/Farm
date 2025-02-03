@@ -104,6 +104,7 @@ header{
     display:grid;
     padding: 0;
     text-align: center;
+    margin: 0;
 
 }
 nav{
@@ -114,6 +115,14 @@ ul{
     list-style: none;
     justify-content: center;
     padding: 0;
+    margin: 0;
+    justify-items: center;
+}
+body{
+    margin:0;
+}
+header p{
+    margin-top: 0;
 }
 a{
     display: block;
@@ -122,6 +131,7 @@ a{
     background-color: #E75D02;
     width:250px;
     color: #ffffff;
+    padding: 0.5rem 1rem;
 }
 main{
     margin: 0 1rem, 1rem, 1rem;
@@ -133,13 +143,26 @@ figure p{
     color:#ffffff;
     width: 130px;
     display: block;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    bottom: 150px;
+    left: 90px;
+    z-index: 1;
+}
+footer{
+    display: grid;
+    background-color: #06A816;
+    text-align: center;
+    color: #ffffff;
+}
+footer h2{
+    margin-bottom: 0.5rem;
 }
 
+@media screen and (min-width:428px) {
 
-
-
-@media (min-width:428px) {
-#sale-fruit{
+section.sale-items{
     display:grid;
     justify-items: center;
     justify-content: center;
@@ -153,3 +176,66 @@ ul{
     grid-template-rows: 1fr 1fr 0;
 }
 }
+@media screen and (min-width: 834px){
+    header{
+        grid-template-columns: 1fr 1fr;
+        }
+    nav ul{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    section.sale-items{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    a{
+        text-align: center;
+    }
+    header p{
+        margin: auto;
+    }
+    section.sale-items h3{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+@media screen and (min-width: 1280px){
+        header{
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        nav ul{
+            position:absolute;
+            right:5rem;
+            top: 2rem;
+        }
+        header p{
+            grid-row: 2/3;
+        }
+        section.sale-items{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+         
+        footer{
+            grid-template-columns:1fr 1fr ;
+        
+        }
+        #contact{
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-column: 3/4;
+        }
+    }
+    @media screen and (min-width:1440px){
+        section.sale-items{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        }
+        
+    
